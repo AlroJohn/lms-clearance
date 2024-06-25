@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 60px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: black solid 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+section {
+    padding: 60px;
+    height: 100%;
+    width: 100%;
+}
+
+/* .std_data {
+    width: 100%;
+} */
+
+.links{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.students {
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    border: 1px solid #dddddd;
+    background-color: #f2f2f2;
+}
+.student_table {
+    border-collapse: collapse;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    border: 1px solid #dddddd;
+    background-color: #f2f2f2;
+}
+.header_th {
+    padding: 4px;
+    display: contents;
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+.data_td {
+    display: contents;
+}
+
+.students div {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+.students:nth-child(odd) .data_td {
+    background-color: #888888;
+}
+
+.students:nth-child(even) .data_td {
+    background-color: #eeeeee;
+} 
+
+
+/* SWITCH */
+/* Hide default checkbox */
+.switch input {
+    display: none;
+  }
+  
+  /* Style the slider */
+  .switch .slider {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Style the slider's knob */
+  .switch .slider:before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    left: 2px;
+    bottom: 2px;
+    transition: transform 0.3s;
+  }
+  
+  /* Move knob to right when checkbox is checked */
+  .switch input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(20px); /* Move knob to the right */
+  }
+  
