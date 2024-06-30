@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 60px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: black solid 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.std_data {
+    height: 100%;
+    width: 100%;
+}
+
+.students {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.data-row{
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: auto;
+}
+.header-row{
+    font-weight: bold;
+}
+.header-row, .data-row {
+    display: grid;
+    grid-template-columns: 3fr repeat(5, 1fr); /* Adjust the width ratio here */
+    gap: 1px;
+    background-color: #f2f2f2;
+}
+
+.header-row div, .data-row div {
+    text-align: center;
+}
+
+.question {
+    grid-column: 1 / span 6; /* Span all 6 columns */
+    padding: 10px;
+}
+
+input[type="radio"] {
+    /* Custom size */
+    width: 20px;
+    height: 20px;
+    /* Custom styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #000000; /* Border color */
+    border-radius: 50%; /* Makes it round */
+}
+
+/* Optional: Custom styles for checked state */
+input[type="radio"]:checked {
+    background-color: #050505; /* Fill color when checked */
+}
+
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ddd;
+}
+
+.header_th {
+    display: contents;
+    font-weight: bold;
+}
+
+.table-body{
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.students div {
+    padding: 8px;
+    text-align: left;
+}
+
+.students .data_td:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.students .data_td:nth-child(odd) {
+    background-color: #f9f9f9;
+}

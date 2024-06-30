@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="std_data">
+            <div class="students" id="teacher-data">
+                <div class="header-table">
+                    <h1>Curriculum Evaluation - Teacher</h1>
+                    <button id="submit-teacher">Submit</button>
+                </div>
+                <!-- Headers -->
+                <div class="header-row">
+                    <div>Evaluate</div>
+                    <div>Strongly Disagree (1)</div>
+                    <div>Disagree (2)</div>
+                    <div>Neutral (3)</div>
+                    <div>Agree (4)</div>
+                    <div>Strongly Agree (5)</div>
+                </div>
+                <form method="post" id="teacher-form">
+                    <div class="data-row">
+                        <!-- Example student data rows -->
+                        <div class="data_td">The curriculum provides a comprehensive understanding of the subject
+                            matter.</div>
+                        <div class="data_td"><input type="radio" name="q1" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q1" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q1" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q1" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q1" value="5"></div>
+
+                        <div class="data_td">The courses are well-structured and logically sequenced.</div>
+                        <div class="data_td"><input type="radio" name="q2" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q2" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q2" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q2" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q2" value="5"></div>
+
+                        <div class="data_td">The curriculum includes up-to-date information and recent developments in
+                            the
+                            field.</div>
+                        <div class="data_td"><input type="radio" name="q3" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q3" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q3" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q3" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q3" value="5"></div>
+
+                        <div class="data_td">The curriculum effectively integrates theory and practical application.
+                        </div>
+                        <div class="data_td"><input type="radio" name="q4" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q4" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q4" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q4" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q4" value="5"></div>
+
+                        <div class="data_td">The courses help in developing critical thinking and problem-solving
+                            skills.</div>
+                        <div class="data_td"><input type="radio" name="q5" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q5" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q5" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q5" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q5" value="5"></div>
+
+                        <div class="data_td">The course content is relevant to current industry practices.</div>
+                        <div class="data_td"><input type="radio" name="q6" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q6" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q6" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q6" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q6" value="5"></div>
+
+                        <div class="data_td">The learning materials (textbooks, online resources, etc.) are useful and
+                            accessible.</div>
+                        <div class="data_td"><input type="radio" name="q7" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q7" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q7" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q7" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q7" value="5"></div>
+
+                        <div class="data_td">The instructional methods used in the courses are effective.</div>
+                        <div class="data_td"><input type="radio" name="q8" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q8" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q8" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q8" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q8" value="5"></div>
+
+                        <div class="data_td">The courses encourage active participation and engagement.</div>
+                        <div class="data_td"><input type="radio" name="q9" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q9" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q9" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q9" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q9" value="5"></div>
+
+                        <div class="data_td">The assessments and exams accurately measure my understanding of the course
+                            material.</div>
+                        <div class="data_td"><input type="radio" name="q10" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q10" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q10" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q10" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q10" value="5"></div>
+
+                        <div class="data_td">The faculty members are knowledgeable and approachable.</div>
+                        <div class="data_td"><input type="radio" name="q11" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q11" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q11" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q11" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q11" value="5"></div>
+
+                        <div class="data_td">I receive adequate academic support and guidance.</div>
+                        <div class="data_td"><input type="radio" name="q12" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q12" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q12" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q12" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q12" value="5"></div>
+
+                        <div class="data_td">The feedback provided by instructors is helpful and constructive.</div>
+                        <div class="data_td"><input type="radio" name="q13" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q13" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q13" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q13" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q13" value="5"></div>
+
+                        <div class="data_td">I am satisfied with the overall quality of the curriculum.</div>
+                        <div class="data_td"><input type="radio" name="q14" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q14" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q14" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q14" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q14" value="5"></div>
+
+                        <div class="data_td">I would recommend this program to prospective students.</div>
+                        <div class="data_td"><input type="radio" name="q15" value="1"></div>
+                        <div class="data_td"><input type="radio" name="q15" value="2"></div>
+                        <div class="data_td"><input type="radio" name="q15" value="3"></div>
+                        <div class="data_td"><input type="radio" name="q15" value="4"></div>
+                        <div class="data_td"><input type="radio" name="q15" value="5"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="tscript.js"></script>
+</body>
+
+</html>
